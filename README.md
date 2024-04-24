@@ -4,7 +4,7 @@ Site web au thème du Cinéma qui permet le vote et l'affichage de planning en l
 
 ## Installation
 
-1. Cloner le repository: `git clone https://github.com/Extasy93/Cin-ma-Website-6SSE.git`
+1. Cloner le repository: `git clone https://github.com/Extasy93/Cinema-Website-6SSE.git`
 2. Install apache / nginx pour linux ou bien Xampp pour Windows.
 3. Importer et Configurer la base de donnée MySQL
 
