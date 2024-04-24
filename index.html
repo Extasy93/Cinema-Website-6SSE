@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Ceci est uniquement un loading screen">
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets\img\me.webp" type="image/x-icon">
+    <title>Cinéma Des Retho</title>
+</head>
+
+<body id="backgroundLoader" onLoad="setTimeout('RedirectionJavascript()', 1200)">
+
+    <script type="text/javascript">
+        function RedirectionJavascript() {
+            document.location.href = "home.html";
+        }
+    </script>
+
+    <div class="container">
+        <div class="loader">
+            <div>
+                <img class="zoomOut" src="assets\img\cinema-icon.webp" alt="Cinéma Icon">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

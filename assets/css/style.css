@@ -1,0 +1,1006 @@
+/* Transition index.html */
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Transition pour l'affichage des écriture de la page d'accueil */
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* ---- */
+/* Base */
+/* ---- */
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(44, 44, 44);
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  color: #34E4EA;
+  margin: 0;
+}
+
+#home-h2-text {
+  margin-top: 15px;
+}
+
+/* Icon de vote */
+
+.custom-vote-icon {
+  width: 0.9em;
+  /* Taille basée sur la taille de la police */
+  height: auto;
+  /* Hauteur ajustée automatiquement pour conserver les proportions */
+  vertical-align: middle;
+  /* Alignement vertical avec le texte */
+  margin-left: 5px;
+  /* Marge à gauche pour séparer l'image du texte */
+  /* Ajoutez d'autres styles CSS si nécessaire */
+}
+
+/* Retirer la scroll bar */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Flèche de retour */
+
+.imgRetour {
+  display: flex;
+  margin-top: 1%;
+  margin-left: 16%;
+  transition: 0.5s;
+}
+
+.imgRetour:hover {
+  -ms-transform: scale(1.2);
+  /* IE 9 */
+  -webkit-transform: scale(1.2);
+  /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+.retour-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+/* Pointer Personalisé */
+
+body {
+  font-family: 'Comfortaa', cursive;
+  cursor: url('../img/pointer.webp') 0 0, auto;
+}
+
+button:hover {
+  cursor: url('../img/hand_pointer.webp') 0 0, auto;
+}
+
+.cta:hover {
+  cursor: url('../img/hand_pointer.webp') 0 0, auto;
+}
+
+#arrow-cursor {
+  cursor: url('../img/hand_pointer.webp') 0 0, auto;
+}
+
+.me-color {
+  color: #404040;
+  cursor: url('../img/hand_pointer.webp') 0 0, auto;
+}
+
+.insta-color {
+  color: #e62525;
+  cursor: url('../img/hand_pointer.webp') 0 0, auto;
+}
+
+/* Loader index.html */
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zoomOut {
+  animation: zoom-out 2.5s ease-out;
+}
+
+#backgroundLoader {
+  background-color: #a73939;
+}
+
+/* Container */
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.sous-container {
+  /* border: solid 2px red; */
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.divContentHome {
+  /* border: solid 2px blue; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  flex-wrap: wrap;
+  height: 80%;
+  gap: -10px;
+}
+
+.divContentVote {
+  /* border: solid 2px blue; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  flex-wrap: wrap;
+  height: 25%;
+  gap: -10px;
+}
+
+.divContentFaq {
+  /* border: solid 2px blue; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  flex-wrap: wrap;
+  height: 25%;
+  gap: -10px;
+}
+
+.divContentPlanning {
+  /* border: solid 2px blue; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  flex-wrap: wrap;
+  height: 25%;
+  gap: -10px;
+}
+
+.reveal-h1 {
+  display: block;
+  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+  color: #fff;
+}
+
+.reveal-h2 {
+  display: block;
+  opacity: 0;
+  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1)0.5s;
+  animation-fill-mode: forwards;
+  color: #fff;
+}
+
+p .reveal {
+  display: block;
+  opacity: 0;
+  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1)1s;
+  animation-fill-mode: forwards;
+}
+
+.dynamic-wallpaper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.dynamic-wallpaper {
+  background-image:
+    url("../img/cinema-backgroud.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Boutton Principal */
+
+.cta {
+  display: flex;
+  margin-top: 4%;
+  padding: 10px 45px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  color: white;
+  background: #e62525;
+  transition: 1s;
+  box-shadow: 6px 6px 0 #404040;
+  transform: skewX(-15deg);
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  color: white;
+  box-shadow: 10px 10px 0 #404040;
+}
+
+.cta span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+span:nth-child(2) {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+/**************SVG****************/
+
+path.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+path.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: #404040;
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+/* @media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+
+  li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+} */
+
+
+/**************Modal selection de classes****************/
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 2;
+}
+
+#blur-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+/**************Modal selection de classes****************/
+
+.modal-vote-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 2;
+}
+
+/**************Vote Container****************/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin-top: -200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.reveal-h2-color-result {
+  color: #3ad414fa;
+}
+
+.film-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  width: min(900px, 100%);
+  box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+  z-index: 10;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  padding: 0 35px;
+  text-align: justify;
+}
+
+.info p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* SWIPER */
+
+.swiper {
+  width: 290px;
+  height: 450px;
+  padding: 50px 6;
+}
+
+.swiper-slide {
+  position: relative;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  cursor: url('../img/hand_pointer.webp') 0 0, auto;
+}
+
+.swiper-slide span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  padding: 7px 18px;
+  margin: 10px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: inherit;
+  background: rgba(255, 255, 255, 0.095);
+  box-shadow: inset 2px -2px 20px rgba(214, 214, 214, 0.2), inset -3px 3px 3px rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(74px);
+}
+
+.swiper-slide h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin: 0 0 20px 20px;
+}
+
+.container-ask {
+  margin-top: -13%;
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+
+.accordion .accordion-item {
+  background-color: #fff;
+  cursor: url('../img/hand_pointer.webp') 0 0, auto;
+}
+
+
+.accordion .accordion-item {
+  border-bottom: 3px solid #d12f2f;
+}
+
+.accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1px solid #d12f2f;
+  cursor: url('../img/hand_pointer.webp') 0 0, auto;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 97%;
+  padding: 1em 12px;
+  color: #343536;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: url('../img/hand_pointer.webp') 0 0, auto;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #d12f2f;
+  cursor: url('../img/hand_pointer.webp') 0 0, auto;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #d12f2f;
+  border: 1px solid #d12f2f;
+  cursor: url('../img/hand_pointer.webp') 0 0, auto;
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+  cursor: url('../img/hand_pointer.webp') 0 0, auto;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+  cursor: url('../img/hand_pointer.webp') 0 0, auto;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+  cursor: url('../img/hand_pointer.webp') 0 0, auto;
+}
+
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+  cursor: url('../img/hand_pointer.webp') 0 0, auto;
+}
+
+.accordion button[aria-expanded=true] {
+  color: #343536;
+}
+
+.accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+
+.accordion button[aria-expanded=true]+.accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+.faq-h2 {
+  position: relative;
+  margin-bottom: -22%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.faq-p {
+  color: #3f4041;
+  text-align: center;
+}
+
+#video-background {
+  width: 1000px;
+  height: 800px;
+  margin-top: -200px
+}
+
+#image-mobile {
+  display: none;
+  /* Par défaut, l'image est cachée */
+}
+
+/* Pour les éléments qui doivent être redimensionnés sur des écrans plus petits */
+@media screen and (max-width: 768px) {
+  body {
+    font-family: 'Comfortaa', cursive;
+  }
+
+  h1 {
+    font-size: 2rem;
+    /* Réduire davantage la taille de la police pour les très petits écrans */
+  }
+
+  #home-h2-text {
+    margin-top: 0px;
+  }
+
+  .sous-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  #svg-vote {
+    width: 60px;
+    height: 45px;
+    margin-right: -35px;
+  }
+
+  #svg-text {
+    display: flex;
+    /* Utiliser Flexbox */
+    align-items: center;
+    /* Aligner verticalement */
+    justify-content: center;
+    /* Aligner horizontalement */
+  }
+
+  .info {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    order: 2;
+    max-width: 285px;
+  }
+
+  .info p {
+    display: none;
+  }
+
+  .film-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .reveal-h2 {
+    font-size: 1.0rem;
+    margin-top: 15px;
+  }
+
+  .imgRetour {
+    margin-left: 4%;
+    width: 70%;
+    /* Ajuster davantage la marge pour les très petits écrans */
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cta {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    /* Aligner verticalement */
+    justify-content: center;
+    /* Aligner horizontalement */
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding: 5px 50px;
+  }
+
+  #text-vote {
+    width: 93px;
+  }
+
+  .swiper {
+    margin-top: 10px;
+    order: 1;
+    width: 200px;
+    /* Réduire encore la largeur du conteneur swiper pour les très petits écrans */
+    height: 300px;
+    /* Ajuster la hauteur du conteneur swiper pour les très petits écrans */
+  }
+
+  .container-ask {
+    margin-top: 0;
+    padding: 1rem;
+    /* Ajuster davantage le rembourrage pour les très petits écrans */
+    width: 101%;
+    /* Réduire encore la largeur du conteneur pour les très petits écrans */
+  }
+
+  .dynamic-wallpaper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/cinema-backgroud.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Empêche le fond d'écran de défiler avec le contenu */
+  }
+
+  .divContentVote {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 34%;
+  }
+
+  .divContentFaq {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 5%;
+  }
+
+  #Vote-section {
+    margin-top: -74px;
+  }
+
+  .divContentPlanning {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: -25%;
+  }
+
+  #list-film-text {
+    display: none;
+  }
+
+  #plus-de-vote-film-text {
+    font-size: 1.2rem;
+  }
+
+  #h1-vote-film-text {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    margin-bottom: -4px;
+  }
+
+  .faq-h2 {
+    margin-bottom: -170px;
+  }
+
+  #video-background {
+    display: none;
+  }
+
+  #image-mobile {
+    display: block;
+    width: 300px;
+    height: 480px
+  }
+}
+
+/* Pour les éléments qui doivent être ajustés sur des écrans encore plus petits */
+@media screen and (max-width: 480px) {
+  body {
+    font-family: 'Comfortaa', cursive;
+  }
+
+  .cta {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    /* Aligner verticalement */
+    justify-content: center;
+    /* Aligner horizontalement */
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding: 5px 50px;
+  }
+
+  #text-vote {
+    width: 93px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    /* Réduire davantage la taille de la police pour les très petits écrans */
+  }
+
+  #home-h2-text {
+    margin-top: 0px;
+  }
+
+  .sous-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  #svg-vote {
+    width: 60px;
+    height: 45px;
+    margin-right: -35px;
+  }
+
+  #svg-text {
+    display: flex;
+    /* Utiliser Flexbox */
+    align-items: center;
+    /* Aligner verticalement */
+    justify-content: center;
+    /* Aligner horizontalement */
+  }
+
+  .info {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    order: 2;
+    max-width: 285px;
+  }
+
+  .info p {
+    display: none;
+  }
+
+  .film-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  #Vote-section {
+    margin-top: -74px;
+  }
+
+  .reveal-h2 {
+    font-size: 1.0rem;
+    margin-top: 15px;
+  }
+
+  .imgRetour {
+    margin-left: 4%;
+    width: 70%;
+    /* Ajuster davantage la marge pour les très petits écrans */
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cta {
+    display: flex;
+    align-items: center;
+    /* Aligner verticalement */
+    justify-content: center;
+    /* Aligner horizontalement */
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding: 5px 50px;
+  }
+
+  .swiper {
+    margin-top: 10px;
+    order: 1;
+    width: 200px;
+    /* Réduire encore la largeur du conteneur swiper pour les très petits écrans */
+    height: 300px;
+    /* Ajuster la hauteur du conteneur swiper pour les très petits écrans */
+  }
+
+  .container-ask {
+    margin-top: 0;
+    padding: 1rem;
+    /* Ajuster davantage le rembourrage pour les très petits écrans */
+    width: 101%;
+    /* Réduire encore la largeur du conteneur pour les très petits écrans */
+  }
+
+  .dynamic-wallpaper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/cinema-backgroud.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Empêche le fond d'écran de défiler avec le contenu */
+  }
+
+  .divContentVote {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 34%;
+  }
+
+  .divContentFaq {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 5%;
+  }
+
+  .divContentPlanning {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: -25%;
+  }
+
+  #list-film-text {
+    display: none;
+  }
+
+  #plus-de-vote-film-text {
+    font-size: 1.2rem;
+  }
+
+  #h1-vote-film-text {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    margin-bottom: -4px;
+  }
+
+  .faq-h2 {
+    margin-bottom: -170px;
+  }
+
+  #video-background {
+    display: none;
+  }
+
+  #image-mobile {
+    display: block;
+    width: 300px;
+    height: 480px
+  }
+}
