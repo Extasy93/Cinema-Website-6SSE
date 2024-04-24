@@ -1,4 +1,4 @@
-# Cin-ma-Website-6SSE
+# Cinema-Website-6SSE
 
 Site web au thème du Cinéma qui permet le vote et l'affichage de planning en ligne. 
 
@@ -6,10 +6,11 @@ Site web au thème du Cinéma qui permet le vote et l'affichage de planning en l
 
 1. Cloner le repository: `git clone https://github.com/Extasy93/Cin-ma-Website-6SSE.git`
 2. Install apache / nginx pour linux ou bien Xampp pour Windows.
+3. Importer et Configurer la base de donnée MySQL
 
 ## Docker
 
-Ce site web tourne en prod sur un docker. Voici comment le mettre en place:
+Ce site web tourne en production sur un environement docker. Voici comment le mettre en place:
 
 1. Copier tous les fichiers du site dans la racine du deploy.sh
 2. Executer le script deploy.sh (il s'occupe de tout) ou bien faite la commande :
@@ -19,7 +20,9 @@ Ce site web tourne en prod sur un docker. Voici comment le mettre en place:
 
 ## Base de donnée
 
-Ce projet tourne sur une base de donnée mysql.
+Ce projet tourne sur une base de donnée mysql. 
+1. Importer la base de donnée SQL dans votre serveur mysql
+2. N'oubliez pas de modifier les information de connection à votre base de donnée dans le fichier pdo.php
 
 ## License
 
