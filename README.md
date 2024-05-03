@@ -12,7 +12,7 @@ Site web au thème du Cinéma qui permet le vote et l'affichage de planning en l
 
 Ce site web tourne en production sur un environement docker. Voici comment le mettre en place:
 
-1. Copier tous les fichiers du site dans la racine du deploy.sh
+1. Copier tous les fichiers du site dans le même dossier que le deploy.sh
 2. Executer le script deploy.sh (il s'occupe de tout) ou bien faite la commande :
   docker build -t cinema-projet .
   docker run -d --network=host --restart=always --name cinema-projet cinema-projet
